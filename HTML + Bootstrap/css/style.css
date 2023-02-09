@@ -65,16 +65,18 @@ nav ul li:hover a{
  .left-content{
     background-color: #7eb6ca;
 }
-.main-content{
+/* .main-content{
     background-color: #93BFCF;
-}
+} */
 .main-content .about-me{
     margin: 30px 0;
     text-align: justify;
 }
 
-.main-content .about-me img{
+.main-content .about-img{
     width: 850px;
+    box-shadow: 0 0 10px black !important;
+    border-radius: 15px;
 }
 .slider .col-md-12, .nav-bar .col-md-12, 
 header .col-md-2, header .col-md-10{
@@ -103,12 +105,16 @@ header .col-md-2, header .col-md-10{
     border: 1px solid black;
 }
 
+.card{
+    background-color: #93BFCF;
+}
+
 .card img{
     height: 200px;
 }
-/*.card .card-title{
+
+.card .card-title{
     font-family: 'Roboto', sans-serif; 
-    color: rgb(43, 98, 226);
     font-weight: 700;
 }
 .card .card-text{
@@ -139,18 +145,82 @@ header .col-md-2, header .col-md-10{
 }
 .footer-title{
     padding: 20px 0;
+    text-align: center;
 }
 .left-content ul{
     padding: 10px 30px;
 }
 .left-content h2{
     margin: 20px 0px;
-} */
+}
+.about-content-col, .card-img{
+    position: relative;
+}
+.about-layer::after{
+    content: " ";
+    background-color: black;
+    position: absolute;
+    height: 97%;
+    width: 0%;
+    opacity: 0.5;
+    top:0%;
+    border-radius: 15px;
+    transition: all 2s;
+}
+.about-content-col:hover .about-layer::after{
+    height: 97%;
+    width: 91.5%;
+}
+.card-img-layer::after{
+    content: " ";
+    background-color: black;
+    position: absolute;
+    height: 0%;
+    width: 0%;
+    opacity: 0.5;
+    top:0;
+    transition: all 2s;
+}
+.card-img:hover .card-img-layer::after{
+    height: 100%;
+    width: 100%;
+}
+
 /* font-family: 'Oswald', sans-serif;
 font-family: 'Playfair Display', serif;
 font-family: 'Poppins', sans-serif;
 font-family: 'Roboto', sans-serif; */
 
-.left-content h2{
-    margin: 20px;
+@media screen and (min-width:320px) and (max-width:480px) {
+    .banner{
+        display: none;
+    }
+    .slider .layer{
+        display: none;
+    }
+
+    .main-content .about-para{
+        margin: 25px 0;
+    }
+
+    .recent-project .col-md-4 .card{
+        margin: 15px 0;
+    }
+    .footer .col-md-3{
+        padding: 10px 0;
+    }
+    .footer .col-md-3 h2{
+        text-align: center;
+    }
+    .subscribe .btn{
+        position: relative;
+        top: -7px;
+        right: -10px;
+    }
+    .footer{
+        padding: 15px;
+    }
+    nav{
+        text-align: center;
+    }
 }
