@@ -4,6 +4,9 @@ header img{
 .logo,.banner{
     width: 100%;
 }
+.navbar{
+    background-color: #6096B4 !important;
+}
 
 nav ul li{
     margin: 0 30px;
@@ -11,9 +14,9 @@ nav ul li{
     font-weight: bold;
 }
 nav ul li:hover{
-    background-color: #1aaee9;
+    background-color: #376d80;
     border-radius: 10%;
-    transition: all 2s;
+    transition: all 1s;
 }
 
 nav ul li:hover a{
@@ -59,19 +62,95 @@ nav ul li:hover a{
     font-size: 14px;
 }
 
-.left-content{
-    background-color: cornflowerblue;
-    height: 600px;
+ .left-content{
+    background-color: #7eb6ca;
 }
 .main-content{
-    background-color: rgb(21, 119, 165);
-    height: 600px;
+    background-color: #93BFCF;
+}
+.main-content .about-me{
+    margin: 30px 0;
+    text-align: justify;
 }
 
-.slider .col-md-12, .nav-bar .col-md-12, header .col-md-2, header .col-md-10{
+.main-content .about-me img{
+    width: 850px;
+}
+.slider .col-md-12, .nav-bar .col-md-12, 
+header .col-md-2, header .col-md-10{
     padding: 0px;
 }
+.recent-project{
+    padding: 20px 0;
+}
+
+.recent-project h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+.recent-project-para{
+    text-align: justify;
+    margin: 30px 0;
+}
+.recent-project h2::after{
+    content: ' ';
+    position: absolute;
+    width: 320px;
+    height: 2px;
+    right: 370px;
+    top: 913px;
+    border: 1px solid black;
+}
+
+.card img{
+    height: 200px;
+}
+/*.card .card-title{
+    font-family: 'Roboto', sans-serif; 
+    color: rgb(43, 98, 226);
+    font-weight: 700;
+}
+.card .card-text{
+    text-align: justify;
+}
+
+.footer{
+    padding: 20px 0;
+    border-color: #BDCDD6 !important;
+}
+.footer{
+    background-color: #BDCDD6 !important;
+}
+.footer h2{
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+.footer .about-me{
+    text-align: justify;
+}
+.footer .subscribe .btn{
+    margin-top: 10px;
+}
+
+.slider .col-md-12, .nav-bar .col-md-12, 
+header .col-md-2, header .col-md-10{
+    padding: 0px;
+}
+.footer-title{
+    padding: 20px 0;
+}
+.left-content ul{
+    padding: 10px 30px;
+}
+.left-content h2{
+    margin: 20px 0px;
+} */
 /* font-family: 'Oswald', sans-serif;
 font-family: 'Playfair Display', serif;
 font-family: 'Poppins', sans-serif;
 font-family: 'Roboto', sans-serif; */
+
+.left-content h2{
+    margin: 20px;
+}
