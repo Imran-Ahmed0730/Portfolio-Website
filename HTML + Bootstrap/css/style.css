@@ -186,6 +186,53 @@ header .col-md-2, header .col-md-10{
     width: 100%;
 }
 
+/* about page section */
+.about-myself h2, .client-review-heading h2{
+    text-align: center;
+    margin: 30px 0;
+}
+.about-myself h2::before, .client-review-heading h2::before{
+    content: " ";
+    height: 2px;
+    width: 20px;
+    border-left: 3px solid black;
+}
+.about-myself h2::after, .client-review-heading h2::after{
+    content: " ";
+    height: 2px;
+    width: 5px;
+    border-left: 3px solid black;
+}
+
+.client-review-heading p{
+    text-align: center;
+}
+
+.about-myself-content{
+    margin: 30px 0;
+    text-align: justify;
+}
+
+.my-image .img-center{
+    height: 350px;
+    width: 350px;
+    box-shadow: 0 0 10px black;
+    margin-bottom: 30px;
+    position: relative;
+    left: 300px;
+
+}
+
+.img-center:hover{
+    transform: scale(1.5);
+    transition: all 1s;
+}
+
+.img-resize img{
+    height: 200px;
+}
+
+
 /* font-family: 'Oswald', sans-serif;
 font-family: 'Playfair Display', serif;
 font-family: 'Poppins', sans-serif;
