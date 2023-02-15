@@ -187,6 +187,10 @@ header .col-md-2, header .col-md-10{
 }
 
 /* about page section */
+
+.gen-info{
+    margin: 30px 5px;
+}
 .about-myself h2, .client-review-heading h2{
     text-align: center;
     margin: 30px 0;
@@ -231,7 +235,83 @@ header .col-md-2, header .col-md-10{
 .img-resize img{
     height: 200px;
 }
+.client-slider{
+    position: relative;
+}
 
+.client-slider button span{
+    font-size: 60px;
+    position: absolute;
+    top: -32px;
+    right: 10px;
+    color: red;
+}
+.owl-carousel .owl-prev{
+    position: absolute;
+    top:195px;
+    height: 40px !important;
+    width: 40px !important;
+    background-color: black !important;
+    border-radius: 50%;
+    opacity: 0.5;
+}
+.owl-carousel .owl-next{
+    position: absolute;
+    top:195px;
+    left:790px;
+    height: 40px !important;
+    width: 40px !important;
+    background-color: black !important;
+    border-radius: 50%;
+    opacity: 0.5;
+}
+
+/* portfolio section */
+.project-section h2{
+    margin: 30px 0;
+}
+.project-section ol li p{
+    margin: 15px 0;
+}
+.table{
+    display: table;
+    border: 1px solid black;
+}
+
+.th{
+    font-weight: 700;
+}
+.table-row{
+    display: table-row;
+    border: 1px solid black;
+}
+.table-col{
+    display: table-cell;
+    border: 1px solid black;
+}
+
+/* gallery-section */
+
+.gallery-owl-carousel .owl-carousel .owl-next{
+    position: absolute;
+    top:195px;
+    left:1240px;
+    height: 40px !important;
+    width: 40px !important;
+    background-color: black !important;
+    border-radius: 50%;
+    opacity: 0.5;
+}
+.gallery-images img{
+    margin: 10px 10px;
+    height: 200px;
+    width: 100%;
+}
+
+.gallery-images img:hover{
+    transform: scale(1.5);
+    transition: all 1s;
+}
 
 /* font-family: 'Oswald', sans-serif;
 font-family: 'Playfair Display', serif;
